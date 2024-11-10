@@ -1,36 +1,7 @@
-<?php //ob_start(); ?>
-<!--<h1>Blog Home post</h1>-->
-<?php
-//
-//foreach ($posts as $post): ?>
-<!--    <h2><a href="/post/--><?php //= $post['id'] ?><!--">--><?php //= htmlspecialchars($post['title']) ?><!--</a></h2>-->
-<!--    <p>--><?php //= htmlspecialchars($post['summary']) ?><!--</p>-->
-<?php //endforeach; ?>
-<?php //$content = ob_get_clean(); ?>
-<?php //include 'layouts/main.php'; ?>
-
 <html lang="">
 <head>
 <!-- Include Head -->
 <?php include "../app/views/assets/head.php" ?>
-<?php
-
-//// Get Latest articles
-//$stmt = $conn->prepare("SELECT * FROM `article` INNER JOIN category ON id_categorie=category_id ORDER BY `article_created_time` DESC  LIMIT 9");
-//$stmt->execute();
-//$articles = $stmt->fetchAll();
-//
-//// Get Categories
-//$stmt = $conn->prepare("SELECT *,COUNT(*) as article_count FROM `article` INNER JOIN category ON id_categorie=category_id GROUP BY id_categorie");
-//$stmt->execute();
-//$categories = $stmt->fetchAll();
-//
-//// Get Most Read Articles
-//$stmt = $conn->prepare("SELECT * FROM `article` INNER JOIN category ON id_categorie=category_id order by RAND() LIMIT 4");
-//$stmt->execute();
-//$most_read_articles = $stmt->fetchAll();
-
-?>
 
 <style>
     .bg-div {

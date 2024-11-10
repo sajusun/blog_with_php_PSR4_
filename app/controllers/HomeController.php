@@ -18,7 +18,9 @@ class HomeController extends Controller
     public function article($id)
 
     {
-        echo "article $id";
+        $articles=(new Post())->articleInfo($id);
+        $this->view('post',$articles);
+     //   echo "article $id";
 //        $post = (new Post())->getById($id);
 //        $this->view('post', ['post' => $post]);
     }
