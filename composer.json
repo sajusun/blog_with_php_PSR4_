@@ -1,0 +1,19 @@
+{
+    "name": "dell/core_php",
+    "description": "php core project",
+    "type": "project",
+    "license": "personal",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sajusun",
+            "email": "sajuislam266@gmail.com"
+        }
+    ],
+    "require": {}
+}
