@@ -10,7 +10,7 @@
 <body>
 
 <!-- Header -->
-<?php include "../app/views/assets/header.php" ?>
+<?php include root."app/views/assets/header.php"?>
 
 <!-- /Header -->
 

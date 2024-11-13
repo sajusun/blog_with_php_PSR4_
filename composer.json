@@ -15,5 +15,7 @@
             "email": "sajuislam266@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-pdo": "*"
+    }
 }

@@ -1,14 +1,24 @@
 <?php
+namespace App;
+//header('location:./public');
 
-header('location:./public');
-
-
-//require_once '../core_php/core/App.php';
-//require_once '../core_php/core/Route.php';
-//require_once '../core_php/core/Controller.php';
-//require_once '../core_php/core/Model.php';
-//require_once '../core_php/core/View.php';
-//require_once '../core_php/core/Database.php';
-//require_once '../core_php/routes/web.php';
+//
+//use Core\App;
+//
+//require_once 'core/App.php';
+//require_once 'core/Route.php';
+//require_once 'core/Controller.php';
+//require_once 'core/Model.php';
+//require_once 'core/View.php';
+//require_once 'core/Database.php';
+//require_once 'routes/web.php';
 //
 //$app = new App();
+
+use Core\App;
+
+require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/routes/web.php';
+require_once __DIR__.'/config.php';
+
+new App();

@@ -1,7 +1,7 @@
 <html lang="">
 <head>
 <!-- Include Head -->
-<?php include "../app/views/assets/head.php" ?>
+<?php include root."app/views/assets/head.php" ?>
 
 <style>
     .bg-div {
@@ -22,7 +22,7 @@
 <body class="d-flex flex-column min-vh-100">
 
 <!-- Header -->
-<?php include "../app/views/assets/header.php" ?>
+<?php include root."app/views/assets/header.php"?>
 <!-- </Header> -->
 
 <!-- Main -->
@@ -258,7 +258,7 @@
 </main><!-- </Main> -->
 
 <!-- Footer -->
-<?php include "../app/views/assets/footer.php" ?>
+<?php include root."app/views/assets/footer.php" ?>
 <!-- </Footer> -->
 </body>
 

@@ -52,7 +52,8 @@ class Route
     // Convert route path with parameters (e.g., /post/{id}) to regex
     private static function convertToPattern($path): string
     {
-        return "#^" . preg_replace('/\{(\w+)\}/', '(\w+)', trim($path, '/')) . "$#";
+        //return "#^" . preg_replace('/\{(\w+)\}/', '(\w+)', trim($path, '/')) . "$#";
+        return "#^" . preg_replace('/\{(\w+)}/', '(\w+)', trim($path, '/')) . "$#";
     }
 
     // Execute the controller action with parameters
@@ -66,6 +67,8 @@ class Route
         } else {
             http_response_code(500);
             echo "Controller or Method Not Found";
+            //Controller::not_found();
+
         }
         return false;
     }
